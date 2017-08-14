@@ -1,6 +1,5 @@
 # BigGIS Accumulo
-[![Build Status](https://travis-ci.org/biggis-project/biggis-accumulo.svg?branch=master)][Travis]
-[Travis]: https://travis-ci.org/biggis-project/biggis-accumulo
+[![Build Status](https://api.travis-ci.org/biggis-project/biggis-accumulo.svg)](https://travis-ci.org/biggis-project/biggis-accumulo)
 Docker container for Apache Accumulo
 
 ## Prerequisites

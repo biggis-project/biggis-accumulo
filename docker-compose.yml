@@ -12,8 +12,6 @@ services:
       USER_NAME: hdfs
       HADOOP_MASTER_ADDRESS: hdfs-name
       TIMEZONE: Europe/Berlin
-    # volumes:
-    #   - hdfs-data:/data/hdfs
 
   hdfs-sname:
     image: biggis/hdfs:2.7.1
@@ -27,8 +25,6 @@ services:
       USER_NAME: hdfs
       HADOOP_MASTER_ADDRESS: hdfs-name
       TIMEZONE: Europe/Berlin
-    # volumes:
-    #   - hdfs-data:/data/hdfs
 
   hdfs-data:
     image: biggis/hdfs:2.7.1
@@ -43,8 +39,6 @@ services:
       USER_NAME: hdfs
       HADOOP_MASTER_ADDRESS: hdfs-name
       TIMEZONE: Europe/Berlin
-    # volumes:
-    #   - hdfs-data:/data/hdfs
 
   zookeeper:
     image: biggis/zookeeper:3.4.9
@@ -55,8 +49,6 @@ services:
       USER_ID: ${USER_ID-1000}
       USER_NAME: zookeeper
       TIMEZONE: Europe/Berlin
-    # volumes:
-    #   - zookeeper-data:/tmp/zookeeper/data
 
   accumulo-master:
     image: biggis/accumulo:1.7.3
@@ -99,6 +91,3 @@ services:
       HADOOP_MASTER_ADDRESS: hdfs-name
       ZOOKEEPERS: zookeeper
       TIMEZONE: Europe/Berlin
-
-# volumes:
-#   hdfs-data:
